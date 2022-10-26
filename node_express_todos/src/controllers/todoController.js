@@ -1,4 +1,4 @@
-import { getConnection } from '../../database/database';
+import { getConnection } from '../database/database';
 
 const index = async (req, res) => {
     try {
