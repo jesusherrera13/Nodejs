@@ -1,1 +1,38 @@
-GET http://localhost:3000/api/todo HTTP/1.1
+GET http://localhost:3000/api/v1/todo HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/v1/todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "todo": "JavaScipt"
+}
+
+###
+
+GET http://localhost:3000/api/v1/todo/2 HTTP/1.1
+
+###
+
+PUT http://localhost:3000/api/v1/todo/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "todo": "C#",
+    "done": 1
+}
+
+###
+
+PATCH http://localhost:3000/api/v1/todo/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "todo": "Python",
+    "done": 1
+}
+
+###
+
+DELETE  http://localhost:3000/api/v1/todo/2 HTTP/1.1
